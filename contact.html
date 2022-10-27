@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>A Colher - Contact</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <table id="header">
+      <tr>
+        <td id="home_logo">
+          <a href="home.html"
+            ><img id="logo" src="images/logo.png" height="80px" alt="logo"
+          /></a>
+        </td>
+        <td id="navbar">
+          <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">Restaurant</button>
+              <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Products</button>
+              <div class="dropdown-content">
+                <a href="photo_gallery.html">Photo Gallery</a>
+                <a href="store.html">Store</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Events & News</button>
+              <div class="dropdown-content">
+                <a href="events.html">Events</a>
+                <a href="news.html">News</a>
+              </div>
+            </div>
+            <a href="contact.html">Contact</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div>
+      <h1>Contact us</h1>
+      <p id="paragraph">
+        Have a question or comment for us? Submit down below and we'll get back
+        to you as soon as we can.
+      </p>
+      <form name="comments" action="submitted.html" method="get">
+        <div id="box">
+          <h3>Last Name</h3>
+          <input class="simple" id="lastname" type="text" name="lastname" />
+          <h3>First Name</h3>
+          <input class="simple" id="firstname" type="text" name="firstname" />
+          <h3>Email</h3>
+          <input
+            class="simple"
+            id="mail"
+            type="email"
+            name="email"
+            placeholder="yourmail@yahoo.com"
+          />
+          <h3>Questions & Comments</h3>
+          <textarea name="request" id="request" cols="66" rows="10"></textarea>
+          <h3>Country</h3>
+          <select class="yourclass" name="country" id="country">
+            <option value="france">France</option>
+            <option value="portugal">Portugal</option>
+            <option value="spain">Spain</option>
+            <option value="belgium">Belgium</option>
+            <option value="luxembourg">Luxembourg</option>
+            <option value="netherlands">Nederlands</option>
+          </select>
+          <input
+            type="Submit"
+            formaction="http://vip.groupehn.com:20003/html/infospost.php"
+            formmethod="post"
+            value="Send"
+          />
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2022 <a href="home.html">A Colher</a></p>
+    </footer>
+  </div>
+</body>

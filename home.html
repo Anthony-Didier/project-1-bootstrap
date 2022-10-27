@@ -3,79 +3,204 @@
   <meta charset="utf-8" />
   <title>A Colher - Home</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  />
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 21px;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 21px;
+    }
+
+    h3 {
+      font-size: 16px;
+      text-decoration: underline;
+    }
+    .container {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .container-fluid {
+      background-color: #dd2d32;
+      align-items: center;
+      display: flex;
+    }
+    .navbar {
+      min-width: 960px;
+      min-height: 100px;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .navbar-brand {
+      width: 187px;
+      height: 100px;
+      line-height: 100px;
+      background-color: #3a7137;
+    }
+    .navbar-nav {
+      padding-left: 100px;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+      font-size: 21px;
+      font-weight: bold;
+    }
+    .welcome {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+    }
+    p#welcome {
+      position: absolute;
+      /* display: inline-block; */
+      width: 400px;
+      text-align: center;
+      vertical-align: middle;
+      font-family: "Lucida Handwriting";
+      font-size: 21px;
+      font-weight: bold;
+      text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+      color: white;
+      word-spacing: 3px;
+      background: rgba(0, 0, 0, 0.1);
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%) translateY(40%);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <table id="header">
-      <tr>
-        <td id="home_logo">
-          <a href="home.html"
-            ><img id="logo" src="images/logo.png" height="80px" alt="logo"
-          /></a>
-        </td>
-        <td id="navbar">
-          <div class="navbar">
-            <div class="dropdown">
-              <button class="dropbtn">Restaurant</button>
-              <div class="dropdown-content">
-                <a href="about.html">About</a>
-                <a href="menu.html">Menu</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Products</button>
-              <div class="dropdown-content">
-                <a href="photo_gallery.html">Photo Gallery</a>
-                <a href="store.html">Store</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Events & News</button>
-              <div class="dropdown-content">
-                <a href="events.html">Events</a>
-                <a href="news.html">News</a>
-              </div>
-            </div>
-            <a href="contact.html">Contact</a>
-          </div>
-        </td>
-      </tr>
-    </table>
-    <div id="photos">
-      <img
-        id="home_photo"
-        src="images/home_photo_1.jpg"
-        alt="home_photo_1"
-        width="480px"
-        height="300px"
-      />
-      <img
-        id="home_photo"
-        src="images/home_photo_2.jpg"
-        alt="home_photo_2"
-        width="480px"
-        height="300px"
-      />
-      <img
-        id="home_photo"
-        src="images/home_photo_3.jpg"
-        alt="home_photo_3"
-        width="480px"
-        height="300px"
-      />
-      <img
-        id="home_photo"
-        src="images/home_photo_4.jpg"
-        alt="home_photo_4"
-        width="480px"
-        height="300px"
-      />
-      <div id="welcome">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"
+          ><img id="logo" src="images/logo.png" height="80px" alt="logo"
+        /></a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                style="color: black"
+                >Restaurant</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                style="color: black"
+                >Products</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li><a href="store.html">Store</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                style="color: black"
+                >Events & News</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="dropdown"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="true"
+                style="color: black"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-sm-6">
+        <img
+          id="home_photo"
+          src="images/home_photo_1.jpg"
+          alt="home_photo_1"
+          width="480px"
+          height="300px"
+        />
+      </div>
+      <div class="col-sm-6">
+        <img
+          id="home_photo"
+          src="images/home_photo_2.jpg"
+          alt="home_photo_2"
+          width="480px"
+          height="300px"
+        />
+      </div>
+      <div class="col-sm-6">
+        <img
+          id="home_photo"
+          src="images/home_photo_3.jpg"
+          alt="home_photo_3"
+          width="480px"
+          height="300px"
+        />
+      </div>
+      <div class="col-sm-6">
+        <img
+          id="home_photo"
+          src="images/home_photo_4.jpg"
+          alt="home_photo_4"
+          width="480px"
+          height="300px"
+        />
+      </div>
+      <div class="welcome">
         <p id="welcome">Welcome to A Colher!<br />Bem-vindo em A Colher!</p>
       </div>
     </div>
-    <footer>
+    <footer class="text-center">
       <p>&copy; 2022 <a href="home.html">A Colher</a></p>
     </footer>
   </div>
